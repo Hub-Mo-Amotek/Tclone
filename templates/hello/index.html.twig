@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<div>
+		{% if messages|length > 0 %}
+			{% for key, message in messages %}
+            <div>
+                <a href="{{ path('app_showOne', {id: key}) }}">{{ message.message }}</a>
+            </div>
+               {{ include('hello/_message.html.twig') }}
+			{% endfor %}
+		{% else %}
+			no shizzlys available
+		{% endif %}
+
+	</div>
+{% endblock %}
