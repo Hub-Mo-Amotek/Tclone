@@ -53,7 +53,42 @@ ex: <br/>``  #[Route('/messages/{id<\d+>}', name: 'app_showOne')] ``
 
 # twig templates
 
-inhertitance in twig 
+### inhertitance in twig 
 ex: <br/>
 `` {% extends base.html.twig %} ``
+
+### twig control structures
+ex forloop: <br/>
+`` 
+{% for row in array %} <div> // stuff </div> {% endfor%}
+``
+<br/>
+<br/>
+
+ex if statement: <br/>
+``
+{% if array|length > 0 %}
+    // do stuff
+{% else %}
+    // do other stuff
+{% endif %}
+``
+<br/>
+
+### partial template
+> you can create a reusable tamplate like: <br/>
+`` 
+_templateName.html.twig
+ ``
+ <br/>
+>to use this this template add ( and pass data to the include template): <br/>
+`` {{ include ("hello/_templateName.html.twig, param: message)}} ``
+
+### generating links
+ex: <br/>
+`` <a href="{{ app_path_name, {id: key} }}" ``
+***always give your routes a name***
+
+
+
 
