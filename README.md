@@ -82,7 +82,7 @@ ex if statement: <br/>
 _templateName.html.twig
  ``
  <br/>
->to use this this template add ( and pass data to the include template): <br/>
+> to use this this template add ( and pass data to the include template): <br/>
 `` {{ include ("hello/_templateName.html.twig, param: message)}} ``
 
 ### generating links
