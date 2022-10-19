@@ -18,6 +18,7 @@ building a complete application where people can tweet, like tweets, leave comme
 handy symfony commands: <br/>
 `` symfony check:requirements ``
 
+
 start a symfony project: <br/>
 `` symfony new projectname --version="6.1" ``
 
@@ -88,6 +89,36 @@ _templateName.html.twig
 ex: <br/>
 `` <a href="{{ app_path_name, {id: key} }}" ``
 ***always give your routes a name***
+
+# symfony make bundle
+>Symfony Maker helps you create empty commands, controllers, form classes, tests and more so you can forget about writing boilerplate code.
+
+install and enable with this command: <br/>
+`` composer require --dev symfony/maker-bundle
+ ``
+ <br/>
+ to know what the maker bundle can do for you run : <br/>
+ `` symfony console list make ``
+
+![symfony console list make](./images/Schermafbeelding%202022-10-19%20om%2014.59.20.png)
+
+# database and doctrine
+to get doctrine run: <br/>
+`` composer require symfony/orm-pack
+ ``
+ <br/>
+<br/>
+![how doctrine works](./images/Schermafbeelding%202022-10-19%20om%2015.48.08.png)
+ORM = Object Relational Mapping
+
+<br/>
+<br/>
+
+#### to know what doctrine can do for you run: <br/>
+
+`` symfony console list doctrine ``
+<br/>
+![symfony console list doctrine ](./images/Schermafbeelding%202022-10-19%20om%2015.52.36.png)
 
 
 
